@@ -1,4 +1,7 @@
 FROM python:3.10.0-slim
+RUN pip install passlib
+RUN pip install argon2_cffi
+RUN pip install bcrypt
 WORKDIR /code
 EXPOSE 8000
 COPY ./requirements.txt /code/requirements.txt
