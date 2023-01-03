@@ -59,6 +59,18 @@
 >
 >![resultaat delete](https://user-images.githubusercontent.com/82623056/210453345-8e032c36-7421-411d-aee0-a466e35d48b2.png)
 >
+>Screenshot van database met hased werkgever en stad
+>
+>![database hased werkgever en stad](https://user-images.githubusercontent.com/82623056/210453554-67cd38f2-7ab9-4b3f-9c31-f05cb8a95ac9.png)
+>
+>Screenshot van database na delete persoon.
+>
+>![database na delete van persoon](https://user-images.githubusercontent.com/82623056/210453631-d93a5216-3817-47ed-afd3-53f85fe50448.png)
+>
+>Screenshot van database beroepen met een update en een verwijderde kolom
+>
+>![database van beroepen met update en een verwijderd](https://user-images.githubusercontent.com/82623056/210453772-dcea9a93-9463-4554-b575-5a80deca29f6.png)
+>
 >Screenshot openAPI docs
 >
 >![screencapture-system-service-lucasdegreef-cloud-okteto-net-docs-2023-01-03-21_52_04 (1)](https://user-images.githubusercontent.com/82623056/210449263-9c038b9a-f8d7-40e9-bbf3-c6a535716963.png)
