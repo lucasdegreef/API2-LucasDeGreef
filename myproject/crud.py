@@ -2,23 +2,19 @@ from sqlalchemy.orm import Session
 
 import models
 import schemas
+import auth
 
 
-def get_user(db: Session, user_id: int):
-    return db.query(models.User).filter(models.User.id == user_id).first()
-
-
-def get_user_by_email(db: Session, email: str):
-    return db.query(models.User).filter(models.User.email == email).first()
+def get_user_by_id(db: Session, user_id: int):
+    return db.query(models.Namen).filter(models.Namen.id == user_id).first()
 
 
 def get_users(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.User).offset(skip).limit(limit).all()
+    return db.query(models.Namen).offset(skip).limit(limit).all()
 
 
-def create_user(db: Session, user: schemas.UserCreate):
-    fake_hashed_password = user.password + "notreallyhashed"
-    db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
+def create_persoon(db: Session, naam: schemas.NamenCreate):
+    db_user = models.Namen(voornaam=naam.voornaam, achternaam=naam.achternaam)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
@@ -26,12 +22,38 @@ def create_user(db: Session, user: schemas.UserCreate):
 
 
 def get_items(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.Item).offset(skip).limit(limit).all()
+    return db.query(models.Beroep).offset(skip).limit(limit).all()
 
 
-def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
-    db_item = models.Item(**item.dict(), owner_id=user_id)
+def create_beroep(db: Session, beroep: schemas.BeroepCreate, user_id: int):
+    db_item = models.Beroep(**beroep.dict(), owner_id=user_id)
     db.add(db_item)
     db.commit()
     db.refresh(db_item)
     return db_item
+
+def create_werkgever(db: Session, werkgever : schemas.WerkgeverCreate ):
+    hashed_werkgever = auth.get_password_hash(werkgever.werkgever)
+    db_item = models.Werkgever(hashed_werkgever=hashed_werkgever,stad=werkgever.stad)
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+
+def delete_persoon(db : Session, user_id : int):
+    db.query(models.Namen).filter(models.Namen.id == user_id).delete()
+    db.commit()
+
+def delete_beroep_van_persoon(db : Session , user_id : int):
+    db.query(models.Beroep).filter(models.Beroep.owner_id == user_id).delete()
+    db.commit()
+
+def update_beroep(db : Session , user_id : int , update : schemas.UpdateberoepenBase):
+    beroep_info = db.query(models.Beroep).filter(models.Beroep.owner_id== user_id).first()
+
+    if beroep_info is None:
+        return None
+    db.query(models.Beroep).filter(models.Beroep.owner_id== user_id).update(vars(update))
+    db.commit()
+
+    return db.query(models.Beroep).filter(models.Beroep.owner_id== user_id).first()

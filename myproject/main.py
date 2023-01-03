@@ -1,20 +1,17 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 
-import os
 import crud
 import models
 import schemas
 from database import SessionLocal, engine
+import os
 
-print("We are in the main.......")
 if not os.path.exists('.\sqlitedb'):
-    print("Making folder.......")
     os.makedirs('.\sqlitedb')
 
-print("Creating tables.......")
+#"sqlite:///./sqlitedb/sqlitedata.db"
 models.Base.metadata.create_all(bind=engine)
-print("Tables created.......")
 
 app = FastAPI()
 
@@ -28,36 +25,54 @@ def get_db():
         db.close()
 
 
-@app.post("/users/", response_model=schemas.User)
-def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
-    db_user = crud.get_user_by_email(db, email=user.email)
-    if db_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
-    return crud.create_user(db=db, user=user)
+@app.post("/persoon/", response_model=schemas.Naam)
+def create_user(user: schemas.NamenCreate, db: Session = Depends(get_db)):
+    return crud.create_persoon(db=db, naam=user)
 
-
-@app.get("/users/", response_model=list[schemas.User])
+#alle mensen in met voornaam en achternaam laten zien met hun beroep en geslacht
+@app.get("/persoon/", response_model=list[schemas.Naam])
 def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     users = crud.get_users(db, skip=skip, limit=limit)
     return users
 
 
-@app.get("/users/{user_id}", response_model=schemas.User)
+@app.get("/persoon/{user_id}", response_model=schemas.Naam)
 def read_user(user_id: int, db: Session = Depends(get_db)):
-    db_user = crud.get_user(db, user_id=user_id)
+    db_user = crud.get_user_by_id(db=db, user_id=user_id)
     if db_user is None:
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
-
-@app.post("/users/{user_id}/items/", response_model=schemas.Item)
+#mensen linken aan een beroep.
+@app.post("/persoon/{user_id}/beroep/", response_model=schemas.Beroep)
 def create_item_for_user(
-    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+    user_id: int, beroep: schemas.BeroepCreate, db: Session = Depends(get_db)
 ):
-    return crud.create_user_item(db=db, item=item, user_id=user_id)
+    return crud.create_beroep(db=db, beroep=beroep, user_id=user_id)
 
 
-@app.get("/items/", response_model=list[schemas.Item])
+@app.post("/persoon/werkgever",response_model=schemas.Werkgver)
+def create_werkgever(werkgever : schemas.WerkgeverCreate , db : Session = Depends(get_db) ):
+    return crud.create_werkgever(db=db , werkgever=werkgever)
+
+#alle beroepen mensen hun beroepen.
+@app.get("/beroepen/", response_model=list[schemas.Beroep])
 def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_items(db, skip=skip, limit=limit)
     return items
+
+@app.delete("/delete/{user_id}/")
+def delete_user(user_id : int , db:Session = Depends(get_db)):
+    details = crud.get_user_by_id(db, user_id=user_id )
+    if details is None:
+        raise HTTPException(status_code=400, detail="geen persoon gevonden om te verwijderen")
+    crud.delete_persoon(db=db,user_id=user_id)
+    crud.delete_beroep_van_persoon(db=db,user_id=user_id)
+    return {"delete persoon" : "succes"}
+
+@app.put("/update/beroep/{user_id}",response_model=schemas.Beroep)
+def update_beroep(user_id : int, update: schemas.UpdateberoepenBase , db:Session = Depends(get_db)):
+    details = crud.get_user_by_id(db=db, user_id=user_id)
+    if details is None:
+        raise HTTPException(status_code=400, detail="geen persoon gevonden")
+    return crud.update_beroep(db=db,user_id=user_id,update=update)
