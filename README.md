@@ -1,14 +1,14 @@
 # Readme opdracht 2 API van Lucas De Greef
 
 ## Informatie over het gekozen onderwerp
-  >Het doel van mij website is om de mentale welzijn van de gebruiker te verbeteren. 
-  >Hiervoor heb ik quotes gekozen. Je kiest een thema en krijgt er verschillende teksten over.
-  >Ook is er een mogelijkheid om u lievelingsgetal door te sturen. Hiermee krijg je een character van Starwars dat het beste bij u past.
-  >In deze opdracht heb ik 2 Gets en 1 Post toegepast.
+  >In deze opdracht hebt ik als thema gekozen dat mensen hun voornaam en achternaam konden ingeven samen met hun beroepen en hun geslacht.
+  >Hier konden hun ook hun werkgever ingeven maar zonder toesteming te hoeven vragen van de werkgever werden deze namen ge hased.
+  >Ook werd er hier gevraagd in welke stad de werkgever zich bevind.
   >
-  > De eerste GET zorgt ervoor dat de gekozen thema van de gebruiker een gepaste tekst toegestuurd krijgt.
-  > De tweede GET geeft een Starwars karakter terug dat het beste past bij het gekozen getal van de gebruiker.
-  > Als laatste de POST. Dit zorgt ervoor dat de ideeën van de gebruikers samen met hun namen verstuurd worden naar de API.
+  >Als de personen een aanpasssing wouden doen als ze bevoorbeeld van beroep zijn veranderd konden ze dit ook maken 
+  >en als dit indien nodig is hun geslacht aanpassen.
+  >Ook kunnen de mensen als ze het echt willen hun gegevens totaal verwijderen hun naam en hun info.
+  >
 * ### links
   * #### hosted API op Oketo
     * [Oketo endpoint Lucas De Greef](https://system-service-lucasdegreef.cloud.okteto.net)
