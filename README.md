@@ -26,8 +26,39 @@
 >
 >![derde post](https://user-images.githubusercontent.com/82623056/210451375-4e427add-65b2-4293-abce-2d9870d15724.png)
 >
+>Screenshot eerste get waar alle namen van personen en hun werk met hun geslacht worden weergegeven
+>
+>![Eerste get](https://user-images.githubusercontent.com/82623056/210451609-4d42c853-8466-4624-bacb-260728c2f0f8.png)
+>
+>Screenshot tweede get waar individueel zijn gegevens worden opgevraagd
+>
+>![Tweede post](https://user-images.githubusercontent.com/82623056/210452169-4e5cc207-e667-4f4f-8953-ee8a6ce9a69e.png)
+>
 
+>Screenshot derde get waar alle beroepen met de personen hun geslacht worden weergegeven
+>
+>![derde post](https://user-images.githubusercontent.com/82623056/210452387-952d15f4-f1e1-429a-99f7-afe1b489fea3.png)
+>
 
+>Screenshot van het resultaat van de put. deze update de beroepen het geslacht van de persoon.
+>
+>![Put](https://user-images.githubusercontent.com/82623056/210452680-ee9e9330-7b3d-4d92-90af-5d828675f9e1.png)
+>
+>Resulutaat
+>
+>![Resultaat put](https://user-images.githubusercontent.com/82623056/210452844-f6ef6a4b-be93-4e7a-8265-c952ff0e8c9b.png)
+>
+
+>Screenshot Delete. Deze delete zorgt er voor dat de persoon wordt verwijderd samen met de info van deze persoon.
+>En geeft een json terug dat het een succes was
+>
+>![Delete](https://user-images.githubusercontent.com/82623056/210453204-158214a9-a796-47f1-9ece-a4f7b0c6feff.png)
+>
+
+>Resultaat van de delete
+>
+>![resultaat delete](https://user-images.githubusercontent.com/82623056/210453345-8e032c36-7421-411d-aee0-a466e35d48b2.png)
+>
 >Screenshot openAPI docs
 >
 >![screencapture-system-service-lucasdegreef-cloud-okteto-net-docs-2023-01-03-21_52_04 (1)](https://user-images.githubusercontent.com/82623056/210449263-9c038b9a-f8d7-40e9-bbf3-c6a535716963.png)
