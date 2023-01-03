@@ -14,12 +14,18 @@
     * [Oketo endpoint Lucas De Greef](https://system-service-lucasdegreef.cloud.okteto.net)
 
 ## Screenshots
->Screenshot openAPI docs
+>Screenshot eerste post toevoegen van personen met voornaam en achternaam
 >
-
 >![eerste post versie 3](https://user-images.githubusercontent.com/82623056/210450027-74b0a1f5-835f-4399-9f96-0c0e5924d4fe.png)
-
-
+>
+>Screenshot tweede post personen in database beroepen toewijzen met hun geslacht
+>
+>![Tweede post](https://user-images.githubusercontent.com/82623056/210450398-69687afd-82ca-4743-9389-11cce3c517f5.png)
+>
+>Screenshot derde post van werkgever door geven en stad van de werkgever
+>
+>![derde post](https://user-images.githubusercontent.com/82623056/210451375-4e427add-65b2-4293-abce-2d9870d15724.png)
+>
 
 
 >Screenshot openAPI docs
