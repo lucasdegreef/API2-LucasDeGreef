@@ -2,12 +2,12 @@
 
 ## Informatie over het gekozen onderwerp
   >In deze opdracht hebt ik als thema gekozen dat mensen hun voornaam en achternaam konden ingeven samen met hun beroepen en hun geslacht.
-  >Hier konden hun ook hun werkgever ingeven maar zonder toesteming te hoeven vragen van de werkgever werden deze namen ge hased.
-  >Ook werd er hier gevraagd in welke stad de werkgever zich bevind.
+  >Hier konden ze hun werkgever ingeven. Zonder toesteming te hoeven vragen van de werkgever werden deze namen ge hashed.
+  >Ook werd er hier gevraagd in welke stad de werkgever zich bevindt.
   >
-  >Als de personen een aanpasssing wouden doen als ze bevoorbeeld van beroep zijn veranderd konden ze dit ook maken 
-  >en als dit indien nodig is hun geslacht aanpassen.
-  >Ook kunnen de mensen als ze het echt willen hun gegevens totaal verwijderen hun naam en hun info.
+  >Als de personen een aanpasssing wouden doen vb. van beroep veranderen konden ze dit ook maken 
+  >en als dit indien nodig is, hun geslacht aanpassen.
+  >Ook kunnen de mensen als ze het echt willen hun gegevens totaal verwijderen o.a. hun naam en hun info.
   >
 * ### links
   * #### hosted API op Oketo
