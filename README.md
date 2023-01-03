@@ -71,6 +71,18 @@
 >
 >![database van beroepen met update en een verwijderd](https://user-images.githubusercontent.com/82623056/210453772-dcea9a93-9463-4554-b575-5a80deca29f6.png)
 >
+>Screenshot Pytest fucnties
+>
+>![fucnties foto 1 pytest](https://user-images.githubusercontent.com/82623056/210456626-988880db-eca2-4acc-9536-3725fdeadb3d.png)
+>
+>![Pytest tweede foto functies](https://user-images.githubusercontent.com/82623056/210456706-1732872d-6379-4a33-b1e2-26fd420cacf4.png)
+
+
+>Screenshot resultaat pytest
+>
+>![Pytest Resultaat](https://user-images.githubusercontent.com/82623056/210456514-ac72d8dd-23bc-44ad-b1fb-5e37823eaccd.png)
+>
+
 >Screenshot openAPI docs
 >
 >![screencapture-system-service-lucasdegreef-cloud-okteto-net-docs-2023-01-03-21_52_04 (1)](https://user-images.githubusercontent.com/82623056/210449263-9c038b9a-f8d7-40e9-bbf3-c6a535716963.png)
