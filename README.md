@@ -80,7 +80,7 @@
 
 >Screenshot resultaat pytest
 >
->![Pytest Resultaat](https://user-images.githubusercontent.com/82623056/210456514-ac72d8dd-23bc-44ad-b1fb-5e37823eaccd.png)
+>![Resultaat pytest](https://user-images.githubusercontent.com/82623056/210456835-b3698469-31fd-4c0d-8e75-1ad4c14177ec.png)
 >
 
 >Screenshot openAPI docs
