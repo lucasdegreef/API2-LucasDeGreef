@@ -75,4 +75,5 @@
 
 >Screenshot openAPI docs
 >
->![screencapture-system-service-lucasdegreef-cloud-okteto-net-docs-2023-01-03-21_52_04 (1)](https://user-images.githubusercontent.com/82623056/210449263-9c038b9a-f8d7-40e9-bbf3-c6a535716963.png)
+>![screencapture-system-service-lucasdegreef-cloud-okteto-net-docs-2023-01-06-16_19_53](https://user-images.githubusercontent.com/82623056/211042116-aeb996ed-4130-4501-ad76-db061f2561f0.png)
+
