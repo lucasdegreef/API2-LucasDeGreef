@@ -1,8 +1,7 @@
 FROM python:3.10.0-slim
 RUN pip install passlib
 RUN pip install argon2_cffi
-RUN pip install bcrypt
-RUN pip install argon2
+RUN pip install "passlib[bcrypt,argon2]"
 RUN pip install "python-jose[cryptography]"
 RUN pip install python-multipart
 WORKDIR /code
