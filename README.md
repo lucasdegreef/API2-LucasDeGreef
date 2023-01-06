@@ -21,15 +21,16 @@
 >
 >Screenshot tweede post personen in database beroepen toewijzen met hun geslacht
 >
->![Tweede post](https://user-images.githubusercontent.com/82623056/210450398-69687afd-82ca-4743-9389-11cce3c517f5.png)
+>![Persoon in data base krijgen eerste post](https://user-images.githubusercontent.com/82623056/211030390-644f5de5-8d6b-4c26-93cc-4684084b9994.png)
 >
->Screenshot derde post van werkgever door geven en stad van de werkgever
+>Screenshot derde post van werkgever door geven en stad van de werkgever. werkgever wordt gehased en stad word terug 
+>gestuurd samen met de ID
 >
->![derde post](https://user-images.githubusercontent.com/82623056/210451375-4e427add-65b2-4293-abce-2d9870d15724.png)
+>![post invoeren van werk gever en stad](https://user-images.githubusercontent.com/82623056/211031924-e5eba604-6f43-43df-8474-df35282edf6b.png)
 >
 >Screenshot eerste get waar alle namen van personen en hun werk met hun geslacht worden weergegeven
 >
->![Eerste get](https://user-images.githubusercontent.com/82623056/210451609-4d42c853-8466-4624-bacb-260728c2f0f8.png)
+>![alle personen](https://user-images.githubusercontent.com/82623056/211035385-8915f932-99d2-422c-8eb4-708a055c4472.png)
 >
 >Screenshot tweede get waar individueel zijn gegevens worden opgevraagd
 >
