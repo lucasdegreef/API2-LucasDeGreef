@@ -8,13 +8,20 @@ import auth
 def get_user_by_id(db: Session, user_id: int):
     return db.query(models.Namen).filter(models.Namen.id == user_id).first()
 
+def get_user_by_name(db:Session, user:str):
+    return db.query(models.Namen).filter(models.Namen.voornaam == user).first()
+"""
+def get_user_by_email(db: Session, email: str):
+    return db.query(models.User).filter(models.User.email == email).first()
+"""
 
 def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Namen).offset(skip).limit(limit).all()
 
 
 def create_persoon(db: Session, naam: schemas.NamenCreate):
-    db_user = models.Namen(voornaam=naam.voornaam, achternaam=naam.achternaam)
+    hashed_achternaam = auth.get_password_hash(naam.achternaam)
+    db_user = models.Namen(voornaam=naam.voornaam, achternaam=hashed_achternaam)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)

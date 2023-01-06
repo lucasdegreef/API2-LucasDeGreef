@@ -1,12 +1,14 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
-
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+import auth
 import crud
 import models
 import schemas
 from database import SessionLocal, engine
 import os
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 if not os.path.exists('.\sqlitedb'):
     os.makedirs('.\sqlitedb')
 
@@ -31,7 +33,7 @@ def create_user(user: schemas.NamenCreate, db: Session = Depends(get_db)):
 
 #alle mensen in met voornaam en achternaam laten zien met hun beroep en geslacht
 @app.get("/persoon/", response_model=list[schemas.Naam])
-def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db),  token: str = Depends(oauth2_scheme)):
     users = crud.get_users(db, skip=skip, limit=limit)
     return users
 
@@ -76,3 +78,21 @@ def update_beroep(user_id : int, update: schemas.UpdateberoepenBase , db:Session
     if details is None:
         raise HTTPException(status_code=400, detail="geen persoon gevonden")
     return crud.update_beroep(db=db,user_id=user_id,update=update)
+
+
+@app.post("/token")
+def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    #Try to authenticate the user
+    var_auth = auth.auth_persoon(db, form_data.username, form_data.password)
+    if not var_auth:
+        raise HTTPException(
+            status_code=401,
+            detail="Incorrect login credits",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    # Add the JWT case sub with the subject(user)
+    access_token = auth.create_access_token(
+        data={"sub": var_auth.achternaam}
+    )
+    #Return the JWT as a bearer token to be placed in the headers
+    return {"access_token": access_token, "token_type": "bearer"}

@@ -19,11 +19,11 @@ class Beroep(BeroepBase):
 
 class NamenBase(BaseModel):
     voornaam: str
-    achternaam: str
+
 
 
 class NamenCreate(NamenBase):
-    pass
+    achternaam: str
 
 
 class Naam(NamenBase):
