@@ -2,6 +2,7 @@
 
 ## Informatie over het gekozen onderwerp
   >In deze opdracht hebt ik als thema gekozen dat mensen hun voornaam en achternaam konden ingeven samen met hun beroepen en hun geslacht.
+  >De achternamen van deze personen worden gehased zodat alles prive blift.
   >Hier konden ze hun werkgever ingeven. Zonder toesteming te hoeven vragen van de werkgever werden deze namen ge hashed.
   >Ook werd er hier gevraagd in welke stad de werkgever zich bevindt.
   >
