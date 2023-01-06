@@ -44,22 +44,21 @@
 
 >Screenshot van het resultaat van de put. deze update de beroepen het geslacht van de persoon.
 >
->![Put](https://user-images.githubusercontent.com/82623056/210452680-ee9e9330-7b3d-4d92-90af-5d828675f9e1.png)
+>![update beroep](https://user-images.githubusercontent.com/82623056/211039546-c8d2ba74-fa9f-4880-be28-2f67f7ccbee0.png)
 >
 >Resulutaat
 >
->![Resultaat put](https://user-images.githubusercontent.com/82623056/210452844-f6ef6a4b-be93-4e7a-8265-c952ff0e8c9b.png)
+>![resultaat put](https://user-images.githubusercontent.com/82623056/211039749-808e502a-c8a3-4bf8-9365-d43c00801bef.png)
 >
 
 >Screenshot Delete. Deze delete zorgt er voor dat de persoon wordt verwijderd samen met de info van deze persoon.
 >En geeft een json terug dat het een succes was
 >
->![Delete](https://user-images.githubusercontent.com/82623056/210453204-158214a9-a796-47f1-9ece-a4f7b0c6feff.png)
+>![Delete persoon ](https://user-images.githubusercontent.com/82623056/211040264-ac7e86dd-6931-4f6b-832d-3797feef3c40.png)
 >
-
 >Resultaat van de delete
 >
->![resultaat delete](https://user-images.githubusercontent.com/82623056/210453345-8e032c36-7421-411d-aee0-a466e35d48b2.png)
+>![resulaat persoon delete](https://user-images.githubusercontent.com/82623056/211040630-eee122c4-7c14-46f8-ad8c-cff0590f3c11.png)
 >
 >Screenshot van database met hased werkgever en stad
 >
