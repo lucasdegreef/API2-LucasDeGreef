@@ -60,17 +60,6 @@
 >
 >![resulaat persoon delete](https://user-images.githubusercontent.com/82623056/211040630-eee122c4-7c14-46f8-ad8c-cff0590f3c11.png)
 >
->Screenshot van database met hased werkgever en stad
->
->![database hased werkgever en stad](https://user-images.githubusercontent.com/82623056/210453554-67cd38f2-7ab9-4b3f-9c31-f05cb8a95ac9.png)
->
->Screenshot van database na delete persoon.
->
->![database na delete van persoon](https://user-images.githubusercontent.com/82623056/210453631-d93a5216-3817-47ed-afd3-53f85fe50448.png)
->
->Screenshot van database beroepen met een update en een verwijderde kolom
->
->![database van beroepen met update en een verwijderd](https://user-images.githubusercontent.com/82623056/210453772-dcea9a93-9463-4554-b575-5a80deca29f6.png)
 >
 >Screenshot Pytest fucnties
 >
