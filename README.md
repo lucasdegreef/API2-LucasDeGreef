@@ -39,7 +39,7 @@
 
 >Screenshot derde get waar alle beroepen met de personen hun geslacht worden weergegeven
 >
->![derde post](https://user-images.githubusercontent.com/82623056/210452387-952d15f4-f1e1-429a-99f7-afe1b489fea3.png)
+>![alle beroepen](https://user-images.githubusercontent.com/82623056/211038637-65bdf386-3781-4ad5-a16e-d5caa7b8e291.png)
 >
 
 >Screenshot van het resultaat van de put. deze update de beroepen het geslacht van de persoon.
