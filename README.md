@@ -21,7 +21,7 @@
 >
 >Screenshot tweede post personen in database beroepen toewijzen met hun geslacht
 >
->![Persoon in data base krijgen eerste post](https://user-images.githubusercontent.com/82623056/211030390-644f5de5-8d6b-4c26-93cc-4684084b9994.png)
+>![persoon beroep toewijzen](https://user-images.githubusercontent.com/82623056/211037776-f8a4061b-76d3-4aa7-9c4b-166d543aaf8e.png)
 >
 >Screenshot derde post van werkgever door geven en stad van de werkgever. werkgever wordt gehased en stad word terug 
 >gestuurd samen met de ID
@@ -34,7 +34,7 @@
 >
 >Screenshot tweede get waar individueel zijn gegevens worden opgevraagd
 >
->![Tweede post](https://user-images.githubusercontent.com/82623056/210452169-4e5cc207-e667-4f4f-8953-ee8a6ce9a69e.png)
+>![persoon apart](https://user-images.githubusercontent.com/82623056/211037894-ce35668d-0284-46ab-8bcd-25698e78e5b3.png)
 >
 
 >Screenshot derde get waar alle beroepen met de personen hun geslacht worden weergegeven
