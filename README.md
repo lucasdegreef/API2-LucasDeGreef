@@ -15,9 +15,9 @@
     * [Oketo endpoint Lucas De Greef](https://system-service-lucasdegreef.cloud.okteto.net)
 
 ## Screenshots
->Screenshot eerste post toevoegen van personen met voornaam en achternaam
+>Screenshot eerste post toevoegen van personen met voornaam en achternaam. Stuurt voornaam met id terug
 >
->![eerste post versie 3](https://user-images.githubusercontent.com/82623056/210450027-74b0a1f5-835f-4399-9f96-0c0e5924d4fe.png)
+>![Persoon in data base krijgen eerste post](https://user-images.githubusercontent.com/82623056/211028353-96237943-e0a1-4209-ac8a-d4af441c592d.png)
 >
 >Screenshot tweede post personen in database beroepen toewijzen met hun geslacht
 >
